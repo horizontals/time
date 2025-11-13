@@ -1,0 +1,62 @@
+/* style.css */
+
+body {
+    font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "sans-serif";
+    background-color: #f9fbff;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #3b5bdb;
+    font-family: "Comic Sans MS", "Hiragino Maru Gothic ProN", cursive;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(59, 91, 219, 0.2);
+}
+
+.flame {
+    border: 3px dashed rgba(59, 91, 219, 0.4);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    width: min(90%, 500px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(59, 91, 219, 0.1);
+}
+
+.setumei {
+    display: block;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: #5366ac;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.indicator {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: bold;
+    color: #1c5ed6;
+    text-align: center;
+    font-family: "Comic Sans MS", "Hiragino Maru Gothic ProN", cursive;
+    letter-spacing: 0.05em;
+    text-shadow: 0 3px 6px rgba(28, 94, 214, 0.15);
+}
+
+span {
+    display: inline-block;
+    min-width: 1.5em;
+    text-align: center;
+}
+
+/* スマホなどの小さい画面 */
+@media (max-width: 480px) {
+    .flame {
+        padding: 1rem;
+    }
+}
