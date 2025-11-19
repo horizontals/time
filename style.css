@@ -58,5 +58,14 @@ span {
 @media (max-width: 480px) {
     .flame {
         padding: 1rem;
+        
     }
+    body {
+    transition: transform 0s;
+    transform: scale(3);
+    transform-origin: center top;
+    height: calc(100% / 0.7);
+    width: calc(100% / 0.7);
 }
+}
+
