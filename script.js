@@ -35,7 +35,7 @@ function loop() {
     let dayOfYear = (time -new Date(Y, 0, 1)) / (1000 * 60 * 60 * 24) + 1;
     let dateInYear = (dayOfYear - 1) / yearLength
 
-    console.log(dayOfYear,dateInYear); // その年の通算日（例：316
+    // console.log(dayOfYear,dateInYear); // その年の通算日（例：316
 
     let hour = Math.floor(dateInYear * 24)
     let minute = Math.floor(dateInYear * 24 * 60) % 60
@@ -53,4 +53,5 @@ function loop() {
 loop()
 setInterval(() => {
     loop()
+
 }, 1000);
